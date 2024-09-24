@@ -1,3 +1,11 @@
-pillow==10.4.0
+anyascii==0.3.2
+defusedxml==0.7.1
+easyocr==1.7.1
+h5py==3.11.0
+huggingface-hub==0.25.1
+langdetect==1.0.9
+opencv-python==4.10.0.84
 pip-chill==1.0.3
+pypdfium2==4.30.0
 pyqt5==5.15.11
+rapidfuzz==3.10.0

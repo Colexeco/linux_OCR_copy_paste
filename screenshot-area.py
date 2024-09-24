@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtCore import Qt, QRect
 from PyQt5.QtGui import QPainter, QPen
 from PIL import ImageGrab
+import easyocr
 
 class ScreenCapture(QWidget):
     def __init__(self):
@@ -45,10 +46,20 @@ class ScreenCapture(QWidget):
         x2 = max(self.start_point.x(), self.end_point.x())
         y2 = max(self.start_point.y(), self.end_point.y())
         screenshot = ImageGrab.grab(bbox=(x1, y1, x2, y2))
-        screenshot.save("screenshot.png")
+        screenshot.save("./temp_data/screenshot.png")
+        self.extract_text()
         self.close()
+        sys.exit(app.exec_())
+
+    def extract_text(self):
+        reader = easyocr.Reader(['en'])
+        preds = reader.readtext('./temp_data/screenshot.png', detail=0)
+        result = " ".join(preds)
+        with open('./temp_data/result.txt','w') as f:
+            f.write(result)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = ScreenCapture()
+    print("Done!")
     sys.exit(app.exec_())

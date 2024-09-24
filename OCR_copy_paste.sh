@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir temp_data
 python3 screenshot-area.py;
 python3 show-results.py;

@@ -15,4 +15,4 @@ sh OCR_copy_paste.sh
 ```
 ### Motivation and Target Users
 This tool was built to work on Linux Mint Cinnamon 21.3 for English text.  
-I made it because I missed the OCR copy paste from Windows PowerToys.
+I made it because I missed the OCR copy paste tool from Windows PowerToys.

@@ -1,7 +1,7 @@
-### Bare-Bones OCR Copy Paste Tool
+### Bare-Bones Linux OCR Copy Paste Tool
 Scan any area on your screen to extract text from images, etc  
-Modify extracted text
-Perfect for when you want to use the text from an image
+Modify extracted text  
+Perfect for when you want to modify/use the text from an image!
 ### Installation
 Prerequisites:
 Python 3.9 or newer and pip
@@ -13,3 +13,5 @@ Run the bash script to use the tool:
 ```
 sh OCR_copy_paste.sh
 ```
+### Motivation and Target Users
+This tool was built to work on Linux Mint Cinnamon Virginia. I made it because I missed the OCR copy paste from Windows PowerToys.

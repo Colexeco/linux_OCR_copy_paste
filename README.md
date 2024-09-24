@@ -1,4 +1,5 @@
 ### Bare-Bones Linux OCR Copy Paste Tool
+![demonstration gif](linux_OCR_copy_paste.gif)  
 Scan any area on your screen to extract text from images, etc  
 Modify extracted text  
 Perfect for when you want to modify/use the text from an image!
